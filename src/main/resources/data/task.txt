@@ -1,0 +1,52 @@
+
+
+Step 1. Solve this:
+
+Use the following fake snacker list:
+
+https://s3.amazonaws.com/misc-file-snack/MOCK_SNACKER_DATA.json
+
+Find all emails of snackers with a 'fave_snack'of a product we stock:
+
+Our product list can be found here (assume all products here are in stock):
+https://ca.desknibbles.com/products.json?limit=250
+
+a) List the real stocked snacks you found under the snacker's 'fave_snack'?
+b) What're the emails of the snackers who listed those as a 'fave_snack'?
+c) If all those snackers we're to pay for their 'fave_snack'what's the total price?
+
+
+
+|-- _corrupt_record: string (nullable = true)
+ |-- email: string (nullable = true)
+ |-- fave_snack: string (nullable = true)
+ |-- first_name: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- id: long (nullable = true)
+ |-- ip_address: string (nullable = true)
+ |-- last_name: string (nullable = true)
+
+ 
+ 
+ {"products":[{"id":4355464134678,"title":"Safco Desktop Plastic Toolbox - External Dimensions: 12.3\" Width x 7.3\" Depth x 8.5\" Height - ABS Plastic - Black - For Tool, Notebook, Paper, Paper Clip - 1 Each","handle":"safco-desktop-plastic-toolbox-external-dimensions-12-3-width-x-7-3-depth-x-8-5-height-abs-plastic-black-for-tool-notebook-paper-paper-clip-1-each",
+ "body_html":"\u003cp\u003eDurable plastic toolbox is large enough to store a variety of desktop essentials within reach. Five compartments of various sizes hold writing utensils, small notebooks, paper clips and more. Handle allows easy mobility.\u003c\/p\u003e",
+ "published_at":"2020-05-21T17:01:18-04:00",
+ "created_at":"2020-05-21T17:01:18-04:00",
+ "updated_at":"2020-05-21T17:01:21-04:00",
+ "vendor":"Safco Products",
+ "product_type":"Desktop Organizers \u0026 Holders",
+ "tags":["Desktop Organizers"],
+ "variants":[{"id":31369511174166,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"SAF3286BL",
+ 	"requires_shipping":true,"taxable":true,"featured_image":{"id":4739416129558,"product_id":4355464134678,"position":1,
+ 	"created_at":"2020-05-21T17:01:20-04:00","updated_at":"2020-05-21T17:01:20-04:00","alt":null,"width":225,"height":225,
+ 	"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/1301\/1263\/products\/7674397.jpg?v=1590094880",
+ 	"variant_ids":[31369511174166]},"available":true,"price":"56.00","grams":1361,
+ 	"compare_at_price":null,"position":1,"product_id":4355464134678,"created_at":"2020-05-21T17:01:18-04:00",
+ 	"updated_at":"2020-05-21T17:01:21-04:00"}],
+ 	"images":[{"id":4739416129558,"created_at":"2020-05-21T17:01:20-04:00",
+ 	"position":1,"updated_at":"2020-05-21T17:01:20-04:00","product_id":4355464134678,
+ 	"variant_ids":[31369511174166],"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/1301\/1263\/products\/7674397.jpg?v=1590094880",
+ 	"width":225,"height":225}],"options":[{"name":"Title","position":1,"values":["Default Title"]}]}]}
+
+
+

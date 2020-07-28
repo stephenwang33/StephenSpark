@@ -1,0 +1,10 @@
+domain: cfapps.io
+instances: 1 
+memory: 1G
+applications:
+- name: my-demmo
+  path: target/demo-0.0.1-SNAPSHOT.war
+
+default: &defaults
+  buildpacks:
+  - java_buildpack

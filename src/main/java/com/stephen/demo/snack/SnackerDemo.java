@@ -31,9 +31,9 @@ public class SnackerDemo {
 	private static final SparkSession spark = SparkBuilder.createSparkSession();
 
 	
-	public static void main(String[] args) throws AnalysisException, IOException {
+	public void main(String[] args) throws AnalysisException, IOException {
 		
-		//load Snacker & products data from APIs
+		//Snacker & products data from APIs
 		//System.out.println(System.getProperty("user.dir"));
 		//String pathSnackers = "https://s3.amazonaws.com/misc-file-snack/MOCK_SNACKER_DATA.json";
 		//demo.generateUrlContext("https://ca.desknibbles.com/products.json?limit=100", file);

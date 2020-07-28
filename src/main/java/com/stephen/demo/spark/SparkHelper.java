@@ -8,13 +8,23 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 public class SparkHelper {
 	
+	private static JavaSparkContext context = SparkBuilder.createJavaSparkContext();
 	private static SparkSession spark = SparkBuilder.createSparkSession();
+
+	public static void setLoggerLevel(Level level) {
+		Logger.getLogger("org").setLevel(level);
+		Logger.getLogger("akka").setLevel(level);
+	}
 	
 	/**
 	 * generate the spark dataset for computing
@@ -86,6 +96,10 @@ public class SparkHelper {
 				e.printStackTrace();
 			}
 		}		
+	}
+	
+	public static JavaRDD<String> LoadCSVData(String path) {
+		return context.textFile(path);
 	}
 
 }
